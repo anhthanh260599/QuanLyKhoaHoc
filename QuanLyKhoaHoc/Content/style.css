@@ -1,0 +1,67 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.menuside {
+    box-shadow: 2px 1px 20px #888888 inset;
+    background-color: white;
+    height: 100vh;
+}
+
+.right-content {
+    box-shadow: 2px 1px 20px #888888 inset;
+    background-color: white;
+    height: 100vh;
+}
+
+.menuside__title {
+    padding-top: 24px;
+    padding-left: 12px;
+    position: relative;
+    font-size: 24px;
+}
+
+.menuside__title::after {
+        position: absolute;
+        z-index: 1000;
+        content: "";
+        width: 96%;
+        height: 4px;
+        background-color: #a2d143;
+        bottom: -10px;
+        left: 10px;
+}
+
+.course-list {
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.column {
+    float: left;
+    margin: 0 auto;  /* Chia đôi trang */
+    width: 50%; 
+}
+
+.line {
+    position: relative;
+    text-align: center;
+}
+
+    .line::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 60px;
+        background-color: #808080;
+        left: 400px;
+        top: 0;
+    }

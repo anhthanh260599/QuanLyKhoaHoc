@@ -1,0 +1,21 @@
+﻿
+@model IEnumerable<QuanLyKhoaHoc.Models.MonHoc>
+
+@{
+    ViewBag.Title = "DotnetCore";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="right-content">
+    <h2 class="menuside__title">Khóa học: Dotnet Core</h2>
+    <div class="line"></div>
+
+    <ul style="list-style-type:decimal; margin-left: 50px;">
+        @foreach (var item in Model)
+        {
+            <li class="column">
+                @Html.DisplayFor(modelItem => item.TenMonHoc)
+            </li>
+        }
+    </ul>
+</div>
